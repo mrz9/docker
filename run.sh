@@ -3,7 +3,7 @@ echo "启动docker环境";
 echo "============================";
 echo "正在启动mysql";
 docker stop zmysql;
-docker run -d -p 3307:3306 --rm --name zmysql -v /Users/mrz/Desktop/docker/mysql/data:/var/lib/mysql -v /Users/mrz/Desktop/docker/mysql/logs:/logs -v /Users/mrz/Desktop/docker/mysql/conf:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=root mysql:5.6;
+docker run -d -p 3307:3306 --rm --name zmysql -v "$PWD/mysql/data":/var/lib/mysql -v "$PWD/mysql/logs":/logs -v "$PWD/mysql/conf":/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=root mysql:5.6;
 
 echo "正在启动php";
 docker stop zphp;
