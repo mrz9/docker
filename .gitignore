@@ -1,0 +1,10 @@
+.DS_Store
+!logs
+logs/*
+!logs/.gitkeep
+!mysq]/data
+mysql/data/*
+!mysql/data/.gitkeep
+!www
+www/*
+!www/.gitkeep
