@@ -8,3 +8,5 @@ mysql/data/*
 !www
 www/*
 !www/.gitkeep
+!nginx/conf.d/default.conf
+nginx/conf.d/*
